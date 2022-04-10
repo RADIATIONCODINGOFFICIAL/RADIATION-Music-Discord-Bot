@@ -63,7 +63,7 @@ client.on("message", async message => {
         Bot Prefix: \`${prefix}\`
         Invite Link: [Click Here](https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands)
 
-        :question: Still need help? [Click Here](https://discord.gg/gU7XAxTpX5) to join server
+        :question: Still need help? [Click Here](https://discord.gg/FJKwgHUzH9) to join server
         `)
         .setThumbnail(client.user.displayAvatarURL())
         .setColor("#006732")
@@ -152,24 +152,21 @@ message.channel.send(`${math.evaluate(`${message.content} + 1`)}`)
 
 // Do not change anything here
 require('http').createServer((req, res) => res.end(`
- |-----------------------------------------------------|
- |                    Informations                     |
- |-----------------------------------------------------|
- |• Alive: 24/7                                        |
- |-----------------------------------------------------|
- |• Author: RADIATION CODING OFFICIAL#4090             |
- |-----------------------------------------------------|
- |• Server: https://dsc.gg/RADIATIONOFFICIAL           |
- |-----------------------------------------------------|
- |• Github: https://github.com/RADIATIONCODINGOFFICIAL |
- |-----------------------------------------------------|
- |• License: Apache License 2.0                        |
- |-----------------------------------------------------|
+ |-----------------------------------------|
+ |              Informations               |
+ |-----------------------------------------|
+ |• Alive: 24/7                            |
+ |-----------------------------------------|
+ |• Author: RADIATION CODING OFFICIAL#4090 |
+ |-----------------------------------------|
+ |• Server: https://discord.gg/FJKwgHUzH9  |
+ |-----------------------------------------| 
+
 `)).listen(3000) //Dont remove this 
 
 client.on("ready", () => {
-   client.user.setStatus("online"); // You can change it to online, dnd, idle
-
+   client.user.setStatus("ONLINE"); // You can change it to online, dnd, idle
+client.user.setActivity(`RADIATION`, {type: 'WATCHING'});
  console.log(`Successfully logined as ${client.user.tag} `)
 });
 
